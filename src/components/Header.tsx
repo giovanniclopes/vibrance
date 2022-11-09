@@ -5,7 +5,7 @@ export default function Header() {
         <>
             <nav>
                 <div>
-                    <img src={Logo} alt="" />
+                    <img src={Logo} alt="Vibrance Logo" />
                 </div>
                 <div>
 
