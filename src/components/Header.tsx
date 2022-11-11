@@ -13,19 +13,19 @@ export function Header() {
         <div>
           <ul className="flex gap-6">
             <li>
-              <a className="">Home</a>
+              <a className="font-medium transition-colors text-[#98499A] hover:text-magenta-600 ">Home</a>
             </li>
             <li>
-              <a className="">Produtos</a>
+              <a className="font-medium transition-colors hover:text-magenta-600 ">Produtos</a>
             </li>
             <li>
-              <a className="">BookClub</a>
+              <a className="font-medium transition-colors hover:text-magenta-600 ">BookClub</a>
             </li>
             <li>
-              <a className="">Ebooks</a>
+              <a className="font-medium transition-colors hover:text-magenta-600 ">Ebooks</a>
             </li>
             <li>
-              <a className="">Contato</a>
+              <a className="font-medium transition-colors hover:text-magenta-600 ">Contato</a>
             </li>
           </ul>
         </div>
