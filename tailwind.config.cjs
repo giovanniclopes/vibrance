@@ -21,6 +21,9 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     extend: {
+      backgroundImage: {
+        firstSection:'url(/src/assets/first-section.png)',
+      },
       fontFamily: {
         sans: 'Poppins, sans-serif'
       },
