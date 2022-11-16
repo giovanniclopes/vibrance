@@ -13,7 +13,7 @@ export function FirstSection() {
           </form>
         </div>
         <div>
-          <img src={mainBooksImage} width={850} alt="" />
+          <img src={mainBooksImage} width={850} draggable={false} alt="" />
         </div>
 			</section>
     </>
