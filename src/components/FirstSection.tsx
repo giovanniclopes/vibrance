@@ -1,25 +1,29 @@
 import mainBooksImage from "../assets/main-books.png";
-import {} from 'phosphor-react';
+import { MagnifyingGlass } from 'phosphor-react';
 
 export function FirstSection() {
   return (
     <>
       <section className="bg-firstSection p-44 grid grid-cols-2">
         <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-6">
-            <h1 className="font-bold text-magenta-900 text-4xl w-96">
+          <div className="flex flex-col gap-6 w-96">
+            <h1 className="font-bold text-magenta-900 text-4xl">
               Qual livro/HQ você está procurando?
             </h1>
-            <p className="text-xl font-normal">
+            <p className="text-lg font-normal">
               Não tem certeza do que quer ler a seguir? Explore nosso catálogo
               de livros.
             </p>
           </div>
           <div>
-            <form>
-              <input className="h-full px-2 py-3 bg-white border-2 border-magenta-900 placeholder:font-light text-sm" type="text" placeholder="Pesquisar por um livro..." />
-              <button className="h-full bg-magenta-900">
-                
+            <form className="flex flex-row items-center w-full h-full">
+              <input
+                className="w-64 h-full px-2 py-3 bg-white text-lg border-2 rounded-none border-magenta-900 placeholder:font-light placeholder:text-sm"
+                type="text"
+                placeholder="Pesquisar por um livro..."
+              />
+              <button className="h-full px-12 py-2 bg-magenta-900 rounded-tr-md rounded-br-md">
+                <MagnifyingGlass size={26} color="#fff" />
               </button>
             </form>
           </div>

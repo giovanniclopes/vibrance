@@ -27,6 +27,9 @@ module.exports = {
       fontFamily: {
         sans: 'Poppins, sans-serif'
       },
+      borderRadius: {
+      DEFAULT: '0px',
+    },
       colors: {
         green: {
           300: '#00B37E',

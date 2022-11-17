@@ -6,7 +6,7 @@ import brazilFlag from "../assets/brazilflag.png";
 export function Header() {
   return (
     <header>
-      <nav className="fixed flex items-center gap-44 px-16 py-4">
+      <nav className="bg-white bg-opacity-60 fixed flex items-center gap-44 px-16 py-4">
         <div>
           <img src={Logo} width={160} alt="Vibrance Logo" />
         </div>
@@ -34,7 +34,7 @@ export function Header() {
         </div>
         <div className="flex gap-2">
           <img src={cartIcon} width={46} alt="Cart" />
-          <img src={userIcon} width={42} alt="User Profile" />
+          <img src={userIcon} width={50} alt="User Profile" />
         </div>
       </nav>
     </header>
