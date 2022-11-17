@@ -1,4 +1,5 @@
 import mainBooksImage from "../assets/main-books.png";
+import {} from 'phosphor-react';
 
 export function FirstSection() {
   return (
