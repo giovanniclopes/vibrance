@@ -4,7 +4,7 @@ import { MagnifyingGlass } from 'phosphor-react';
 export function FirstSection() {
   return (
     <>
-      <section className="bg-firstSection p-44 grid grid-cols-2">
+      <section className="bg-firstSection p-44 flex flex-row">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-6 w-96">
             <h1 className="font-bold text-magenta-900 text-4xl">
@@ -28,8 +28,8 @@ export function FirstSection() {
             </form>
           </div>
         </div>
-        <div>
-          <img src={mainBooksImage} width={850} draggable={false} alt="" />
+        <div className="md:hidden">
+          <img className="w-[500px]" src={mainBooksImage} draggable={false} alt="" />
         </div>
       </section>
     </>
