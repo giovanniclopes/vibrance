@@ -30,7 +30,7 @@ export function Header() {
           </ul>
         </div>
         <div>
-          <img src={brazilFlag} width={36} alt="Brazil Flag" />
+          <img src={brazilFlag} width={46} alt="Brazil Flag" />
         </div>
         <div className="flex gap-2">
           <img src={cartIcon} width={46} alt="Cart" />

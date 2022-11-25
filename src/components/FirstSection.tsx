@@ -4,7 +4,7 @@ import { MagnifyingGlass } from 'phosphor-react';
 export function FirstSection() {
   return (
     <>
-      <section className="bg-firstSection p-44 flex flex-row">
+      <section className="bg-firstSection bg-cover p-44 pb-60 flex flex-row items-center justify-center gap-40">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-6 w-96">
             <h1 className="font-bold text-magenta-900 text-4xl">
@@ -16,7 +16,7 @@ export function FirstSection() {
             </p>
           </div>
           <div>
-            <form className="flex flex-row items-center w-full h-full">
+            <form className="flex flex-row items-center w-full h-12">
               <input
                 className="w-64 h-full px-2 py-3 bg-white text-lg border-2 rounded-none border-magenta-900 placeholder:font-light placeholder:text-sm"
                 type="text"
@@ -29,7 +29,7 @@ export function FirstSection() {
           </div>
         </div>
         <div className="md:hidden">
-          <img className="w-[500px]" src={mainBooksImage} draggable={false} alt="" />
+          <img src={mainBooksImage} width={500} draggable={false} alt="" />
         </div>
       </section>
     </>
