@@ -2,6 +2,7 @@ import Logo from "../public/logo.png";
 import cartIcon from "../assets/cart.png";
 import userIcon from "../assets/login.png";
 import brazilFlag from "../assets/brazilflag.png";
+import { Link } from 'react-router-dom';
 
 export function Header() {
   return (
@@ -13,19 +14,16 @@ export function Header() {
         <div>
           <ul className="flex gap-6">
             <li>
-              <a className="font-medium transition-colors text-magenta-500 hover:text-magenta-600 ">Home</a>
+              <Link to="/" className="font-medium transition-colors text-magenta-500 hover:text-magenta-600">Home</Link>
             </li>
             <li>
-              <a className="font-medium transition-colors hover:text-magenta-600 ">Produtos</a>
+              <Link to="/2" className="font-medium transition-colors hover:text-magenta-600">Produts</Link>
             </li>
             <li>
-              <a className="font-medium transition-colors hover:text-magenta-600 ">BookClub</a>
+              <Link to="/3" className="font-medium transition-colors hover:text-magenta-600">BookClub</Link>
             </li>
             <li>
-              <a className="font-medium transition-colors hover:text-magenta-600 ">Ebooks</a>
-            </li>
-            <li>
-              <a className="font-medium transition-colors hover:text-magenta-600 ">Contato</a>
+              <Link to="/4" className="font-medium transition-colors hover:text-magenta-600">Contact</Link>
             </li>
           </ul>
         </div>
