@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         poppins: "Poppins, sans-serif",
       },
+      backgroundImage: {
+        homeFirstSectionImage: "url(../src/assets/home-first-section-image.webp)",
+      },
       colors: {
         product: {
           purple: {
@@ -24,16 +27,16 @@ export default {
             900: "#0c050c",
           },
           gray: {
-          100: "#d6d6d6",
-          200: "#adadad",
-          300: "#858585",
-          400: "#5c5c5c",
-          500: "#333333",
-          600: "#292929",
-          700: "#1f1f1f",
-          800: "#141414",
-          900: "#0a0a0a"
-},
+            100: "#d6d6d6",
+            200: "#adadad",
+            300: "#858585",
+            400: "#5c5c5c",
+            500: "#333333",
+            600: "#292929",
+            700: "#1f1f1f",
+            800: "#141414",
+            900: "#0a0a0a",
+          },
         },
       },
     },
