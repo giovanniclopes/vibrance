@@ -1,39 +1,23 @@
 import { ArrowRight } from "phosphor-react";
 
 export default function BooCon() {
-  const [searchValue, setSearchValue] = useState("");
-
-  const handleSearchButtonClick = () => {
-    setSearchValue("");
-  };
-
   return (
-    <section>
-      <div>
-        <h3>
+    <section className="bg-product-purple-500 bg-cover bg-booConBackground py-16">
+      <div className="flex flex-col items-center justify-center gap-12">
+        <h3 className="text-5xl font-semibold text-white text-center">
           Online BooCon <br /> 2023
         </h3>
-        <p>
-          Venha participar dessa incrível experiência literária no dia 15 de
-          Outubro!
+        <p className="text-white text-lg text-center">
+          Venha participar dessa incrível experiência <br /> literária no dia 15
+          de Outubro!
         </p>
-        <div className="flex mr-10">
-          <input
-            className="p-2 pr-12 py-3 border-2 outline-none font-medium border-product-purple-500 rounded-es-md rounded-ss-md"
-            type="search"
-            name="book-input-search"
-            id="book-input-search"
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-            placeholder="Pesquise por um livro..."
-          />
-          <div
-            id="search-btn"
-            className="flex items-center justify-center px-8 bg-product-purple-500 rounded-se-md rounded-ee-md cursor-pointer transition-all active:bg-product-purple-400"
-            onClick={handleSearchButtonClick}
-          >
-            <ArrowRight size={24} color="#ffffff" />
-          </div>
+        <div className="flex mr-10 group">
+          <button className="flex items-center justify-center px-14 py-3 border-2 outline-none text-lg font-medium text-white bg-transparent border-white rounded-es-md rounded-ss-md transition-all group-hover:opacity-85">
+            Participar
+          </button>
+          <button className="flex items-center justify-center px-10 bg-white rounded-se-md rounded-ee-md cursor-pointer transition-all group-hover:opacity-85">
+            <ArrowRight size={24} weight="bold" color="#3a1b3b" />
+          </button>
         </div>
       </div>
     </section>
