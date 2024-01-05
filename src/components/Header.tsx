@@ -14,7 +14,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 px-16 bg-product-darkPurple text-product-purple-500">
+    <nav className="flex items-center justify-between flex-wrap p-6 px-16 bg-white text-product-purple-500">
       <div className="flex items-center flex-shrink-0 text-product-purple-500 mr-6 lg:mr-72">
         <NavLink to="/">
           <img src={logo} className="h-12 mr-2" alt="Logo" draggable="false" />

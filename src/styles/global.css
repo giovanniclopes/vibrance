@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply font-poppins tracking-tight;
+  @apply font-poppins text-product-gray-500 tracking-tight;
 }
