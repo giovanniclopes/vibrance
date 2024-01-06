@@ -29,10 +29,10 @@ export function Header() {
       className={
         fix
           ? "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-white/95 text-product-purple-500 mbl:px-5 mbl:p-4 mbl:bg-white"
-          : "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-transparent text-product-purple-500 opacity-90 mbl:px-5 mbl:p-4"
+          : "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-transparent text-product-purple-500 opacity-90 mbl:opacity-95 mbl:px-0 mbl:p-4"
       }
     >
-      <div className="flex items-center flex-shrink-0 text-product-purple-500 mr-6 lg:mr-72">
+      <div className="flex items-center flex-shrink-0 text-product-purple-500 mr-6 lg:mr-72 mbl:ml-5">
         <NavLink to="/">
           <img src={logo} className="h-12 mr-2" alt="Logo" draggable="false" />
         </NavLink>
@@ -43,7 +43,7 @@ export function Header() {
           id="hamburguer-btn"
           aria-label="Open or close hamburguer menu on mobile"
           aria-labelledby="labeldiv"
-          className="flex items-center px-3 py-2 rounded text-product-gray-500 hover:text-product-gray-400"
+          className="flex items-center px-3 py-2 rounded text-product-gray-500 hover:text-product-gray-400 mbl:mr-5"
         >
           {isOpen ? (
             <X size={24} color="#3A1B3B" />
@@ -53,7 +53,7 @@ export function Header() {
         </button>
       </div>
       <div
-        className={`w-full flex flex-grow lg:flex lg:items-center lg:w-auto mbl:flex-col mbl:gap-5 ${
+        className={`bg-white px-6  w-full flex flex-grow lg:flex lg:items-center lg:w-auto mbl:flex-col mbl:gap-5 ${
           isOpen ? "block" : "hidden"
         }`}
       >

@@ -12,10 +12,10 @@ export default function BooCon() {
           de Outubro!
         </p>
         <div className="flex group">
-          <button className="flex items-center justify-center px-24 py-3 border-2 outline-none text-lg font-medium text-white bg-transparent border-white rounded-es-md rounded-ss-md transition-all group-hover:opacity-85 group-hover:bg-white group-hover:text-product-purple-500 mbl:px-12">
+          <button className="flex items-center justify-center px-24 py-3 border-2 outline-none text-lg font-medium text-white bg-transparent border-white rounded-es-md rounded-ss-md transition-all group-hover:bg-white group-hover:text-product-purple-500 mbl:px-12">
             Participar
           </button>
-          <button className="flex items-center justify-center px-10 bg-white rounded-se-md rounded-ee-md cursor-pointer transition-all group-hover:opacity-85 group-hover:bg-transparent border-2 group-hover:border-white">
+          <button className="flex items-center justify-center px-10 bg-white rounded-se-md rounded-ee-md cursor-pointer transition-all group-hover:bg-transparent border-2 group-hover:border-white">
             <ArrowRight className="group-hover:text-white" size={24} weight="bold" />
           </button>
         </div>

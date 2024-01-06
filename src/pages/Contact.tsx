@@ -1,14 +1,14 @@
 export default function Contact() {
   return (
-    <main className="bg-bgContactPage pt-36 px-12 pb-24">
+    <main className="bg-bgContactPage pt-36 px-12 pb-24 mbl:px-8">
       <div className="items-start justify-center gap-24">
         <div>
-          <h1 className="font-extrabold text-6xl text-product-purple-500 mbl:">
+          <h1 className="font-extrabold text-6xl text-product-purple-500 mbl:text-5xl">
             Perguntas? <br /> Estamos aqui para ajudar.
           </h1>
         </div>
-        <div className="grid grid-cols-2 items-start justify-center gap-32 mt-24">
-          <div>
+        <div className="grid grid-cols-2 items-start justify-center gap-32 mt-24 mbl:flex mbl:flex-col">
+          <div className="mbl:w-full">
             <form
               className="flex flex-col gap-8"
               action="https://formsubmit.co/giovanniclopes@gmail.com"
@@ -49,6 +49,7 @@ export default function Contact() {
                   type="text"
                   name="userOrganization"
                   id="userOrganization"
+                  placeholder="Sua organização"
                 />
                 <span className="text-sm text-gray-700"> - Insira sua organização, caso possua</span>
               </div>
@@ -75,7 +76,8 @@ export default function Contact() {
             </form>
           </div>
 
-          <div className="grid grid-cols-2 gap-20">
+
+          <div className="grid grid-cols-2 gap-20 mbl:px-1">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-2">
                 <span className="font-semibold text-lg">Perguntas</span>
