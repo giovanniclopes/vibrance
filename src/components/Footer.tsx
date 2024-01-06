@@ -12,9 +12,9 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-start justify-center my-8 mx-24 gap-12">
       <div>
-        <img className="w-44" src={LogoVibrance} alt="Logo Vibrance" />
+        <img className="w-44 mbl:w-36" src={LogoVibrance} alt="Logo Vibrance" />
       </div>
-      <div className="grid grid-cols-4 items-start justify-start gap-3">
+      <div className="grid grid-cols-4 items-start justify-start gap-3 mbl:flex mbl:flex-col mbl:gap-12">
         <div className="text-base font-light">
           <h4 className="font-medium text-lg mb-5">Sobre a loja</h4>
           <ul className="list-disc">

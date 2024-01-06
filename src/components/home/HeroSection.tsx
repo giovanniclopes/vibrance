@@ -2,6 +2,8 @@ import { useState } from "react";
 import HomeDecoration from "../../assets/svg/HomeDecoration";
 import { MagnifyingGlass } from "phosphor-react";
 
+import HomeDecorationMobile from "../../assets/home-decoration-mobile.png";
+
 export default function HeroSection() {
   const [searchValue, setSearchValue] = useState("");
 
@@ -10,10 +12,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="grid grid-cols-2 gap-x-5 pt-5 bg-homeFirstSectionImage bg-cover bg-center">
-      <div className="flex flex-col gap-10 items-start justify-center px-12">
+    <section className="grid grid-cols-2 gap-x-5 pt-5 bg-homeFirstSectionImage bg-cover bg-center mbl:flex mbl:flex-col mbl:gap-24 mbl:pt-24">
+      <div className="flex flex-col gap-10 items-start justify-center px-12 mbl:pr-5">
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold text-5xl text-product-purple-500 ">
+          <h1 className="font-bold text-5xl text-product-purple-500 mbl:text-4xl">
             Qual livro/HQ você está procurando?
           </h1>
           <p className="text-lg pr-1">
@@ -21,7 +23,7 @@ export default function HeroSection() {
             catálogo de livros.
           </p>
         </div>
-        <div className="w-full flex pr-24">
+        <div className="w-full flex pr-24 mbl:pr-8">
           <input
             className="w-full p-2 pl-5 py-4 border-2 outline-none font-medium border-product-purple-500 rounded-es-md rounded-ss-md"
             type="search"
@@ -40,15 +42,14 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div>
-        <img
-          className=""
-          src="../src/assets/home-duplicated-books.webp"
-          alt=""
-        />
+      <div className="mbl:hidden">
+        <img src="../src/assets/home-duplicated-books.webp" alt="" />
       </div>
-      <div className="mt-10">
+      <div className="mt-10 mbl:hidden">
         <HomeDecoration />
+      </div>
+      <div className="hidden mbl:block mbl:w-screen mbl:overflow-hidden">
+        <img src={HomeDecorationMobile} alt="" />
       </div>
     </section>
   );

@@ -14,19 +14,23 @@ export default function Partnerships() {
           </h2>
         </div>
         <div className="w-full flex items-center justify-center overflow-hidden px-8">
-          <div className="grid grid-cols-5 items-center justify-center gap-16">
+          <div className="grid grid-cols-5 items-center justify-center gap-16 mbl:flex mbl:flex-col">
             <div>
               <img className="w-48" src={Aleph} alt="Aleph" />
             </div>
+            <hr className="hidden mbl:block overflow-hidden w-full border border-product-purple-500" />
             <div>
               <img className="w-48" src={Darkside} alt="Darkside" />
             </div>
+            <hr className="hidden mbl:block overflow-hidden w-full border border-product-purple-500" />
             <div>
               <img className="w-48" src={Intrinseca} alt="Intrinseca" />
             </div>
+            <hr className="hidden mbl:block overflow-hidden w-full border border-product-purple-500" />
             <div>
               <img className="w-48" src={PipocaENanquim} alt="PipocaENanquim" />
             </div>
+            <hr className="hidden mbl:block overflow-hidden w-full border border-product-purple-500" />
             <div>
               <img className="w-48" src={Saraiva} alt="Saraiva" />
             </div>

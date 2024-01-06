@@ -5,7 +5,7 @@ export default function TrendingHQs() {
     <section className="my-24">
       <div className="flex items-center justify-center flex-col gap-12">
         <div>
-          <h2 className="text-5xl text-product-purple-500 font-semibold">
+          <h2 className="text-5xl text-product-purple-500 font-semibold mbl:text-3xl mbl:text-center">
             Quadrinhos populares no momento
           </h2>
         </div>
