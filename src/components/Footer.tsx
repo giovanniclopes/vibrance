@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex flex-col items-start justify-center my-8 mx-24 gap-12">
+    <footer className="flex flex-col items-start justify-center my-8 mx-24 gap-12 mbl:mx-12">
       <div>
         <img className="w-44 mbl:w-36" src={LogoVibrance} alt="Logo Vibrance" />
       </div>
@@ -77,13 +77,13 @@ export default function Footer() {
           <div>
             <div className="flex mr-10">
               <input
-                className="p-2 pr-12 py-3 border-2 outline-none font-medium border-product-purple-500 rounded-es-md rounded-ss-md"
+                className="p-2 pr-12 py-3 border-2 outline-none font-medium border-product-purple-500 rounded-es-md rounded-ss-md mbl:w-full"
                 type="text"
                 name="email-input-newsletter"
                 id="email-input-newsletter"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                placeholder="Seu melhor email"
+                placeholder="Seu email"
               />
               <div
                 id="submit-btn"
