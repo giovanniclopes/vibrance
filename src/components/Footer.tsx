@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex flex-col items-start justify-center my-8 mx-16 gap-12">
+    <footer className="flex flex-col items-start justify-center my-8 mx-24 gap-12">
       <div>
         <img className="w-44" src={LogoVibrance} alt="Logo Vibrance" />
       </div>
