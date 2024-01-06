@@ -53,7 +53,7 @@ export function Header() {
         </button>
       </div>
       <div
-        className={`bg-white px-6  w-full flex flex-grow lg:flex lg:items-center lg:w-auto mbl:flex-col mbl:gap-5 ${
+        className={`px-6  w-full flex flex-grow lg:flex lg:items-center lg:w-auto mbl:bg-white mbl:flex-col mbl:gap-5 ${
           isOpen ? "block" : "hidden"
         }`}
       >
