@@ -1,3 +1,5 @@
+import ContactForm from "../components/contact/ContactForm";
+
 export default function Contact() {
   return (
     <main className="bg-bgContactPage pt-36 px-12 pb-24 mbl:px-8">
@@ -9,71 +11,7 @@ export default function Contact() {
         </div>
         <div className="grid grid-cols-2 items-start justify-center gap-32 mt-24 mbl:flex mbl:flex-col">
           <div className="mbl:w-full">
-            <form
-              className="flex flex-col gap-8"
-              action="https://formsubmit.co/giovanniclopes@gmail.com"
-              method="POST"
-            >
-              <div className="flex flex-col items-start justify-center gap-2">
-                <label className="font-medium text-lg" htmlFor="userName">
-                  Nome completo <span className="text-red-500">*</span>
-                </label>
-                <input
-                  className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:border-product-purple-500"
-                  type="text"
-                  name="userName"
-                  id="userName"
-                  placeholder="Me diga seu nome"
-                  required
-                />
-              </div>
-              <div className="flex flex-col items-start justify-center gap-2">
-                <label className="font-medium text-lg" htmlFor="userEmail">
-                  Email <span className="text-red-500">*</span>
-                </label>
-                <input
-                  className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:border-product-purple-500"
-                  type="email"
-                  name="userEmail"
-                  id="userEmail"
-                  placeholder="Me diga seu e-mail"
-                  required
-                />
-              </div>
-              <div className="flex flex-col items-start justify-center gap-2">
-                <label className="font-medium text-lg" htmlFor="userMessage">
-                  Organização
-                </label>
-                <input
-                  className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:border-product-purple-500"
-                  type="text"
-                  name="userOrganization"
-                  id="userOrganization"
-                  placeholder="Sua organização"
-                />
-                <span className="text-sm text-gray-700"> - Insira sua organização, caso possua</span>
-              </div>
-              <div className="flex flex-col items-start justify-center gap-2">
-                <label className="font-medium text-lg" htmlFor="userMessage">
-                  Sua mensagem <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:border-product-purple-500"
-                  name="userMessage"
-                  id="userMessage"
-                  rows={5}
-                  placeholder="Olá! Eu gostaria de falar sobre {assunto}..."
-                  required
-                />
-              </div>
-              <input type="hidden" name="_template" value="table" />
-              <button
-                aria-label="Enviar mensagem"
-                className="mt-4 px-4 py-5 border-none bg-product-purple-500 text-white font-semibold cursor-pointer rounded transiton-all hover:opacity-90"
-              >
-                Enviar mensagem
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
 

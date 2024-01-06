@@ -5,3 +5,22 @@
 body {
   @apply font-poppins text-product-gray-500 tracking-tight;
 }
+
+::-webkit-scrollbar {
+  width: 13px;
+  background: #000;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #c9c9c9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #696969;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #3a1b3b;
+}

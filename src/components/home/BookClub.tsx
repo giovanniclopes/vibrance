@@ -1,6 +1,6 @@
 export default function BookClub() {
   return (
-    <section className="py-24 bg-cover bg-bgBookclubHome">
+    <section className="py-32 bg-cover bg-bgBookclubHome mbl:py-24">
       <div className="flex flex-col items-center justify-center gap-12 px-36 mbl:px-12">
         <div className="flex flex-col items-center justify-center gap-5 text-center">
           <h3 className="text-white text-4xl font-bold mbl:text-2xl">

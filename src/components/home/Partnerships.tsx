@@ -6,7 +6,7 @@ import Saraiva from "../../assets/logos/saraiva.png";
 
 export default function Partnerships() {
   return (
-    <section className="my-24">
+    <section className="my-36">
       <div className="flex items-center justify-center flex-col gap-12">
         <div>
           <h2 className="text-5xl text-product-purple-500 font-semibold mbl:text-4xl">
