@@ -13,7 +13,7 @@ import Slider from 'react-slick';
 const TrendingBooksCarousel = () => {
   const settings = {
     dots: false,
-    swipeToSlide: false,
+    swipeToSlide: true,
     arrows: false,
     lazyload: true,
     infinite: true,

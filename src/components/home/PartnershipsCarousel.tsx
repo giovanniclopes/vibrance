@@ -1,8 +1,8 @@
-import Aleph from "../../assets/logos/aleph.webp";
-import Darkside from "../../assets/logos/darkside.webp";
-import Intrinseca from "../../assets/logos/intrinseca.webp";
-import PipocaENanquim from "../../assets/logos/pipoca&nanquim.webp";
-import Saraiva from "../../assets/logos/saraiva.webp";
+import Aleph from "../../assets/logos/aleph.png";
+import Darkside from "../../assets/logos/darkside.png";
+import Intrinseca from "../../assets/logos/intrinseca.png";
+import PipocaENanquim from "../../assets/logos/pipocaEnanquim.png";
+import Saraiva from "../../assets/logos/saraiva.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,12 +11,12 @@ import Slider from "react-slick";
 const PartnershipsCarousel = () => {
   const settings = {
     dots: false,
-    swipeToSlide: false,
+    swipeToSlide: true,
     arrows: false,
     lazyload: true,
     infinite: true,
     speed: 3000,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 2500,
     pauseOnHover: false,
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -47,7 +47,7 @@ const PartnershipsCarousel = () => {
     ],
   };
 
-  const trendingBooks = [
+  const partnershipsCarousel = [
     Aleph,
     Darkside,
     Intrinseca,
@@ -58,7 +58,7 @@ const PartnershipsCarousel = () => {
   return (
     <div>
       <Slider {...settings}>
-        {trendingBooks.map((logo, index) => (
+        {partnershipsCarousel.map((logo, index) => (
           <div key={index}>
             <img
               className="rounded-xl mbl:rounded-none"

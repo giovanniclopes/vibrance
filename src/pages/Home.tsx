@@ -1,5 +1,6 @@
 import BienalDoLivro from "../components/home/BienalDoLivro";
 import BooCon from "../components/home/BooCon";
+import BookClub from "../components/home/BookClub";
 import HeroSection from "../components/home/HeroSection";
 import Partnerships from "../components/home/Partnerships";
 import TrendingBooks from "../components/home/TrendingBooks";
@@ -14,6 +15,7 @@ export default function Home() {
       <TrendingHQs />
       <BooCon />
       <Partnerships />
+      <BookClub />
     </main>
   );
 }
