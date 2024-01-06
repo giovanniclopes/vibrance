@@ -15,7 +15,7 @@ export function Header() {
   const [fix, setFix] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 250) {
+    if (window.scrollY >= 210) {
       setFix(true);
     } else {
       setFix(false);
