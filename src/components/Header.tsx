@@ -12,9 +12,26 @@ const navigation = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [fix, setFix] = useState(false);
+
+  function setFixed() {
+    if (window.scrollY >= 250) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  }
+
+  window.addEventListener("scroll", setFixed);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 px-16 bg-white text-product-purple-500 mbl:px-5">
+    <nav
+      className={
+        fix
+          ? "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-white/95 text-product-purple-500 mbl:px-5 mbl:p-4 mbl:bg-white"
+          : "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-transparent text-product-purple-500 opacity-90 mbl:px-5 mbl:p-4"
+      }
+    >
       <div className="flex items-center flex-shrink-0 text-product-purple-500 mr-6 lg:mr-72">
         <NavLink to="/">
           <img src={logo} className="h-12 mr-2" alt="Logo" draggable="false" />

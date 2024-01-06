@@ -13,7 +13,8 @@ export default {
       backgroundImage: {
         homeFirstSectionImage: "url(../src/assets/home-first-section-image.webp)",
         booConBackground: "url(../src/assets/bg-boocon.webp)",
-        bgBookclubHome: "url(../src/assets/bg-bookclub-home.webp)"
+        bgBookclubHome: "url(../src/assets/bg-bookclub-home.webp)",
+        bgContactPage: "url(../src/assets/bg-contactPage.webp)"
       },
       colors: {
         product: {
