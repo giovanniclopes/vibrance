@@ -14,7 +14,8 @@ export default {
         homeFirstSectionImage: "url(../src/assets/home-first-section-image.webp)",
         booConBackground: "url(../src/assets/bg-boocon.webp)",
         bgBookclubHome: "url(../src/assets/bg-bookclub-home.webp)",
-        bgContactPage: "url(../src/assets/bg-contactPage.webp)"
+        bgContactPage: "url(../src/assets/bg-contactPage.webp)",
+        bgContactPage2: "url(../src/assets/bgContactPage2.webp)"
       },
       colors: {
         product: {

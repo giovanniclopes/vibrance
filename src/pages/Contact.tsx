@@ -2,7 +2,7 @@ import ContactForm from "../components/contact/ContactForm";
 
 export default function Contact() {
   return (
-    <main className="bg-bgContactPage pt-36 px-12 pb-24 mbl:px-8">
+    <main className="bg-bgContactPage2 pt-36 px-12 pb-24 mbl:px-8">
       <div className="items-start justify-center gap-24">
         <div>
           <h1 className="font-extrabold text-6xl text-product-purple-500 mbl:text-5xl">

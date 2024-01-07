@@ -59,17 +59,17 @@ export function Header() {
       >
         <div className="flex gap-3 text-base font-semibold lg:flex-grow mbl:flex-col mbl:gap-0 mbl:mt-6">
           {navigation.map((item) => (
-            <a
+            <NavLink
               key={item.name}
-              href={item.href}
+              to={item.href}
               className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:text-product-purple-300 focus:text-product-purple-400"
             >
               {item.name}
-            </a>
+            </NavLink>
           ))}
         </div>
         <div>
-          <NavLink to="/contact">
+          <NavLink to="/login">
             <UserCircle size={42} color="#3a1b3b" />
           </NavLink>
         </div>
