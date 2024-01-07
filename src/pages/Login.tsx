@@ -1,10 +1,17 @@
-import { ArrowLeft, CaretRight, Star } from "phosphor-react";
+import { useState } from "react";
+import { ArrowLeft, CaretRight, Star, Eye, EyeSlash } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
 
 import userVibeTestimonial from "../assets/userVibeTestimonial.png";
 
 export default function Login() {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
+  const [password, setPassword] = useState("");
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   return (
     <main className="">
@@ -12,7 +19,7 @@ export default function Login() {
         <div className="flex flex-col items-start justify-between bg-cover bg-bgLogin w-full px-12 pt-24 pb-32 rounded-ee-xl">
           <div className="flex flex-col gap-5">
             <div className="flex items-start justify-start">
-              <button onClick={() => navigate(-1)}>
+              <button onClick={() => navigate("/")}>
                 <ArrowLeft size={24} color="#ffffff" weight="bold" />
               </button>
             </div>
@@ -67,7 +74,7 @@ export default function Login() {
                 Nome completo <span className="text-red-500">*</span>
               </label>
               <input
-                className="w-full p-3 rounded border border-gray-400"
+                className="w-full p-3 rounded border border-gray-400 focus:outline-none focus:border-2 focus:border-[#723d73]"
                 type="text"
                 name="userName"
                 id="userName"
@@ -81,7 +88,7 @@ export default function Login() {
                 Email <span className="text-red-500">*</span>
               </label>
               <input
-                className="w-full p-3 rounded border border-gray-400"
+                className="w-full p-3 rounded border border-gray-400 focus:outline-none focus:border-2 focus:border-[#723d73]"
                 type="email"
                 name="userEmail"
                 id="userEmail"
@@ -94,22 +101,41 @@ export default function Login() {
               <label className="font-medium text-lg" htmlFor="userPassword">
                 Senha <span className="text-red-500">*</span>
               </label>
-              <input
-                className="w-full p-3 rounded border border-gray-400"
-                type="password"
-                name="userPassword"
-                id="userPassword"
-                placeholder="Senha"
-                maxLength={128}
-                required
-              />
+              <div className="relative">
+                <input
+                  className="w-full p-3 rounded border border-gray-400 focus:outline-none focus:border-2 focus:border-[#723d73]"
+                  type={showPassword ? "text" : "password"}
+                  name="userPassword"
+                  id="userPassword"
+                  placeholder="Senha"
+                  maxLength={128}
+                  required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <span
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                  onClick={togglePasswordVisibility}
+                >
+                  {showPassword ? <EyeSlash size={20} /> : <Eye size={20} />}
+                </span>
+              </div>
+              {password && (
+                <p className="text-sm mt-2">
+                  {password.length > 128
+                    ? "A senha possui mais caracteres que o permitido"
+                    : ""}
+                </p>
+              )}
             </div>
             <div className="flex flex-row items-center justify-between">
               <div className="flex flex-row gap-2">
                 <input type="checkbox" name="userRemember" id="userRemember" />
                 <label htmlFor="userRemember">Lembrar de mim</label>
               </div>
-              <a href="#" className="text-blue-600">Esqueceu sua senha?</a>
+              <a href="#" className="text-blue-600">
+                Esqueceu sua senha?
+              </a>
             </div>
             <button
               aria-label="Enviar mensagem"
@@ -117,7 +143,7 @@ export default function Login() {
             >
               Entrar
             </button>
-            <div className="flex flex-row items-center justify-start gap-1">
+            <div className="flex flex-row items-center justify-start gap-3">
               <span className="text-gray-600">Novo na Vibrance?</span>
               <a className="text-blue-600" href="#">
                 crie sua conta agora
