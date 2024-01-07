@@ -24,11 +24,19 @@ export default function Partnerships() {
             </div>
             <hr className="hidden mbl:block overflow-hidden w-full border border-product-purple-500" />
             <div>
-              <img className="w-48 mbl:w-36" src={Intrinseca} alt="Intrinseca" />
+              <img
+                className="w-48 mbl:w-36"
+                src={Intrinseca}
+                alt="Intrinseca"
+              />
             </div>
             <hr className="hidden mbl:block overflow-hidden w-full border border-product-purple-500" />
             <div>
-              <img className="w-48 mbl:w-36" src={PipocaENanquim} alt="PipocaENanquim" />
+              <img
+                className="w-48 mbl:w-36"
+                src={PipocaENanquim}
+                alt="PipocaENanquim"
+              />
             </div>
             <hr className="hidden mbl:block overflow-hidden w-full border border-product-purple-500" />
             <div>
