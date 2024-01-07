@@ -96,6 +96,18 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="w-full">
+        <hr className="mb-5 border border-gray-300 rounded-full" />
+        <span className="font-light">
+          Desenvolvido por{" "}
+          <a
+            className="font-medium text-product-purple-500"
+            href="https://giovannilopes.vercel.app"
+          >
+            Giovanni Lopes
+          </a>
+        </span>
+      </div>
     </footer>
   );
 }
