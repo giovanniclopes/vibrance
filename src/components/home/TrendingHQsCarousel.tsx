@@ -59,7 +59,6 @@ const TrendingHQsCarousel = () => {
     Watchmen,
   ];
 
-  
   return (
     <div>
       <Slider {...settings}>
