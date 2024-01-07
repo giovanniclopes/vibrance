@@ -8,7 +8,7 @@ import TrendingHQs from "../components/home/TrendingHQs";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden pt-24">
+    <main className="overflow-hidden">
       <HeroSection />
       <TrendingBooks />
       <BienalDoLivro />

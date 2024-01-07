@@ -11,12 +11,14 @@ export default {
         poppins: "Poppins, sans-serif",
       },
       backgroundImage: {
-        homeFirstSectionImage: "url(../../src/assets/home-first-section-image.webp)",
+        homeFirstSectionImage:
+          "url(../../src/assets/home-first-section-image.webp)",
         booConBackground: "url(../../src/assets/bg-boocon.webp)",
         bgBookclubHome: "url(../../src/assets/bg-bookclub-home.webp)",
         bgContactPage: "url(../../src/assets/bg-contactPage.webp)",
         bgContactPage2: "url(../../src/assets/bgContactPage2.webp)",
-        bgLogin: "url(../../src/assets/bg-login.webp)"
+        bgLogin: "url(../../src/assets/bg-login.webp)",
+        bookClubFirstSectionImage: "url(../../src/assets/bookclub-first-section-image.webp)",
       },
       colors: {
         product: {
@@ -32,16 +34,16 @@ export default {
             900: "#0c050c",
           },
           gray: {
-          100: "#d1d2d3",
-          200: "#a3a5a7",
-          300: "#75777b",
-          400: "#474a4f",
-          500: "#191d23",
-          600: "#14171c",
-          700: "#0f1115",
-          800: "#0a0c0e",
-          900: "#050607"
-},
+            100: "#d1d2d3",
+            200: "#a3a5a7",
+            300: "#75777b",
+            400: "#474a4f",
+            500: "#191d23",
+            600: "#14171c",
+            700: "#0f1115",
+            800: "#0a0c0e",
+            900: "#050607",
+          },
         },
       },
     },
