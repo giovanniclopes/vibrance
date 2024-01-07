@@ -1,7 +1,8 @@
 import { useState } from "react";
-import HomeDecoration from "../../assets/svg/HomeDecoration";
 import { MagnifyingGlass } from "phosphor-react";
 
+import homeDuplicatedBooks from "../../assets/home-duplicated-books.webp";
+import HomeDecoration from "../../assets/svg/HomeDecoration";
 import HomeDecorationMobile from "../../assets/home-decoration-mobile.png";
 
 export default function HeroSection() {
@@ -43,7 +44,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="mbl:hidden">
-        <img src="../src/assets/home-duplicated-books.webp" alt="" />
+        <img src={homeDuplicatedBooks} alt="" />
       </div>
       <div className="mt-10 mbl:hidden">
         <HomeDecoration />
