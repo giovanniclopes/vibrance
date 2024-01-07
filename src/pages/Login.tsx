@@ -16,7 +16,7 @@ export default function Login() {
   return (
     <main>
       <div className="grid grid-cols-2 justify-center h-max mbl:flex mbl:flex-col">
-        <div className="flex flex-col items-start justify-between bg-cover bg-bgLogin w-full px-12 pt-24 pb-32 rounded-ee-xl mbl:gap-24 mbl:pb-12">
+        <div className="flex flex-col items-start justify-between bg-cover bg-bgLogin w-full px-12 pt-24 pb-32 rounded-ee-xl mbl:gap-24 mbl:pb-12 mbl:mt-20">
           <div className="flex flex-col gap-5">
             <div className="flex items-start justify-start">
               <button onClick={() => navigate("/")}>
