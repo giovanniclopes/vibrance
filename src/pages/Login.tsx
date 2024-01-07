@@ -14,9 +14,9 @@ export default function Login() {
   };
 
   return (
-    <main className="">
-      <div className="grid grid-cols-2 justify-center h-max">
-        <div className="flex flex-col items-start justify-between bg-cover bg-bgLogin w-full px-12 pt-24 pb-32 rounded-ee-xl">
+    <main>
+      <div className="grid grid-cols-2 justify-center h-max mbl:flex mbl:flex-col">
+        <div className="flex flex-col items-start justify-between bg-cover bg-bgLogin w-full px-12 pt-24 pb-32 rounded-ee-xl mbl:gap-24 mbl:pb-12">
           <div className="flex flex-col gap-5">
             <div className="flex items-start justify-start">
               <button onClick={() => navigate("/")}>
@@ -24,7 +24,7 @@ export default function Login() {
               </button>
             </div>
             <div className="flex items-center justify-center">
-              <h1 className="font-semibold text-5xl text-white">
+              <h1 className="font-semibold text-5xl text-white mbl:text-4xl">
                 Boas-vindas a nossa comunidade!
               </h1>
             </div>
@@ -55,7 +55,8 @@ export default function Login() {
             </div>
           </div>
         </div>
-        <div className="pt-36 px-12 pb-12">
+
+        <div className="pt-36 px-12 pb-12 mbl:pt-16 mbl:px-6">
           <div className="flex flex-col gap-5">
             <h2 className="font-semibold text-5xl">
               Junte-se a{" "}
@@ -133,7 +134,7 @@ export default function Login() {
                 <input type="checkbox" name="userRemember" id="userRemember" />
                 <label htmlFor="userRemember">Lembrar de mim</label>
               </div>
-              <a href="#" className="text-blue-600">
+              <a href="#" className="text-blue-600 mbl:text-sm">
                 Esqueceu sua senha?
               </a>
             </div>
@@ -143,12 +144,14 @@ export default function Login() {
             >
               Entrar
             </button>
-            <div className="flex flex-row items-center justify-start gap-3">
+            <div className="flex flex-row items-center justify-start gap-3 mbl:text-sm">
               <span className="text-gray-600">Novo na Vibrance?</span>
-              <a className="text-blue-600" href="#">
-                crie sua conta agora
-              </a>
-              <CaretRight size={16} color="#2563eb" weight="bold" />
+              <div className="flex flex-row items-center justify-center gap-0">
+                <a className="text-blue-600" href="#">
+                  crie sua conta agora
+                </a>
+                <CaretRight size={16} color="#2563eb" weight="bold" />
+              </div>
             </div>
           </form>
         </div>
