@@ -3,7 +3,6 @@ import LadyKiller from "../../assets/books/hqs/ladykiller.webp";
 import oCorvo from "../../assets/books/hqs/ocorvo.webp";
 import Persepolis from "../../assets/books/hqs/persepolis.webp";
 import Purgatorio from "../../assets/books/hqs/purgatorio.webp";
-import Sandman from "../../assets/books/hqs/sandman.webp";
 import Watchmen from "../../assets/books/hqs/watchmen.webp";
 
 import "slick-carousel/slick/slick.css";
@@ -20,8 +19,8 @@ const TrendingHQsCarousel = () => {
     speed: 3000,
     autoplaySpeed: 3500,
     pauseOnHover: false,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
 
     responsive: [
@@ -55,7 +54,6 @@ const TrendingHQsCarousel = () => {
     oCorvo,
     Persepolis,
     Purgatorio,
-    Sandman,
     Watchmen,
   ];
 
