@@ -122,6 +122,12 @@ export default function ContactForm() {
         <span className="text-sm text-gray-700"> - Máximo 300 caracteres.</span>
       </div>
       <input type="hidden" name="_template" value="table" />
+      <input
+        type="hidden"
+        name="_next"
+        value="https://vibrancee.vercel.app/contact"
+      />
+      <input type="hidden" name="_captcha" value="false" />
       <button
         aria-label="Enviar mensagem"
         className="mt-4 px-4 py-5 border-none bg-product-purple-500 text-white font-semibold cursor-pointer rounded transiton-all hover:opacity-90"
