@@ -1,7 +1,7 @@
 import Aleph from "../../assets/logos/aleph.png";
 import Darkside from "../../assets/logos/darkside.png";
 import Intrinseca from "../../assets/logos/intrinseca.png";
-import PipocaENanquim from "../../assets/logos/pipocaEnanquim.png";
+import PipocaENanquim from "../../assets/logos/pipocaENanquim.png";
 import Saraiva from "../../assets/logos/saraiva.png";
 
 export default function Partnerships() {
