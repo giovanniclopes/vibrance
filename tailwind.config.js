@@ -15,7 +15,8 @@ export default {
         booConBackground: "url(../src/assets/bg-boocon.webp)",
         bgBookclubHome: "url(../src/assets/bg-bookclub-home.webp)",
         bgContactPage: "url(../src/assets/bg-contactPage.webp)",
-        bgContactPage2: "url(../src/assets/bgContactPage2.webp)"
+        bgContactPage2: "url(../src/assets/bgContactPage2.webp)",
+        bgLogin: "url(../src/assets/bg-login.webp)"
       },
       colors: {
         product: {
