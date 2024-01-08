@@ -14,9 +14,11 @@ export default function BookClub() {
           </p>
         </div>
         <div>
-          <button className="px-12 py-5 bg-[#5A2B5B] font-medium text-lg text-white rounded-md transition-all hover:opacity-85 mbl:px-2">
-            Experimente BookClub gratuitamente
-          </button>
+          <a href="/bookclub">
+            <button className="px-12 py-5 bg-[#5A2B5B] font-medium text-lg text-white rounded-md transition-all hover:opacity-85 mbl:px-2">
+              Experimente BookClub gratuitamente
+            </button>
+          </a>
         </div>
       </div>
     </section>
