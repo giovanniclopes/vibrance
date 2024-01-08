@@ -1,6 +1,25 @@
+import { useState, useEffect } from "react";
 import BienalDoLivroImage from "../../assets/bienal-do-livro.webp";
 
 export default function BienalDoLivro() {
+  const [linkUnavailable, setLinkUnavailable] = useState(false);
+
+  const handleSaberMaisClick = () => {
+    setLinkUnavailable(true);
+
+    // Agendar a remoção da mensagem após 5 segundos
+    setTimeout(() => {
+      setLinkUnavailable(false);
+    }, 5000);
+  };
+
+  // Limpar a mensagem se o componente for desmontado antes do tempo
+  useEffect(() => {
+    return () => {
+      setLinkUnavailable(false);
+    };
+  }, []);
+
   return (
     <section className="px-10 py-16">
       <div className="grid grid-cols-2 items-center justify-center mbl:flex mbl:flex-col-reverse">
@@ -13,9 +32,17 @@ export default function BienalDoLivro() {
             você pode nos encontrar, conhecer mais sobre nós e conferir nossos
             livros exclusivos da coleção Vibrance.
           </p>
-          <button className="flex items-center justify-center px-16 py-4 bg-product-purple-500 text-white rounded-md text-xl font-medium transition-all hover:opacity-90 mbl:px-20">
-            Saber mais
-          </button>
+          <div>
+            <button
+              className="flex items-center justify-center px-16 py-4 bg-product-purple-500 text-white rounded-md text-xl font-medium transition-all hover:opacity-90 mbl:px-20"
+              onClick={handleSaberMaisClick}
+            >
+              Saber mais
+            </button>
+            {linkUnavailable && (
+              <p className="text-red-500 mt-2">O link não está disponível.</p>
+            )}
+          </div>
         </div>
         <div className="flex items-center justify-center">
           <img
