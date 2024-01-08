@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex flex-col items-start justify-center my-8 mx-24 gap-12 mbl:mx-12">
+    <footer className="flex flex-col items-start justify-center py-8 px-24 gap-12 bg-gray-100/50 mbl:px-12">
       <div>
         <img className="w-44 mbl:w-36" src={LogoVibrance} alt="Logo Vibrance" />
       </div>

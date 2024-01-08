@@ -1,4 +1,4 @@
-import ABibliotecaDaMeiaNoite from "../../assets/books/abibliotecadameianoite.webp"
+import ABibliotecaDaMeiaNoite from "../../assets/books/abibliotecadameianoite.webp";
 import AliceAtravesDoEspelho from "../../assets/books/aliceatravesdoespelho.webp";
 import ARevolucaoDosBichos from "../../assets/books/arevolucaodosbichos.webp";
 import DoMilAoMilhao from "../../assets/books/domilaomilhao.webp";
@@ -8,7 +8,7 @@ import Verity from "../../assets/books/verity.webp";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick';
+import Slider from "react-slick";
 
 const TrendingBooksCarousel = () => {
   const settings = {

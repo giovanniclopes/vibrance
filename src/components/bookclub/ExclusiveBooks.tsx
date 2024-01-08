@@ -2,7 +2,7 @@ import ExclusiveBooksCarousel from "./ExclusiveBooksCarousel";
 
 export default function ExclusiveBooks() {
   return (
-    <section className="my-24">
+    <section className="my-24 mbl:mt-16">
       <div className="flex items-start justify-center flex-col gap-12">
         <div className="px-24">
           <h2 className="text-4xl text-product-purple-500 font-bold mbl:text-3xl mbl:text-center">

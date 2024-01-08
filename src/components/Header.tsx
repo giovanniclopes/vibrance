@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/svg/logo-vibrance.svg";
-import { List, X, UserCircle } from "phosphor-react";
+import { List, UserCircle, X } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 
 const navigation = [
@@ -15,7 +15,7 @@ export function Header() {
   const [fix, setFix] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 210) {
+    if (window.scrollY >= 150) {
       setFix(true);
     } else {
       setFix(false);
@@ -28,13 +28,18 @@ export function Header() {
     <nav
       className={
         fix
-          ? "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-white/95 text-product-purple-500 mbl:px-5 mbl:p-4 mbl:bg-white"
-          : "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-transparent text-product-purple-500 opacity-90 mbl:opacity-95 mbl:px-0 mbl:p-4"
+          ? "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap px-16 bg-white/95 text-product-purple-500 transition-all mbl:px-5 mbl:p-4 mbl:bg-white"
+          : "z-50 top-0 fixed w-full flex items-center justify-between flex-wrap p-6 px-16 bg-transparent text-product-purple-500 opacity-90 transition-all mbl:opacity-95 mbl:px-3 mbl:p-4"
       }
     >
-      <div className="flex items-center flex-shrink-0 text-product-purple-500 mr-6 lg:mr-72 mbl:ml-5">
+      <div className="flex items-center flex-shrink-0 text-product-purple-500 mr-6 lg:mr-72">
         <NavLink to="/">
-          <img src={logo} className="h-12 mr-2" alt="Logo" draggable="false" />
+          <img
+            src={logo}
+            className="w-100 h-10 mr-2"
+            alt="Logo"
+            draggable="false"
+          />
         </NavLink>
       </div>
       <div className="block lg:hidden">
@@ -43,7 +48,7 @@ export function Header() {
           id="hamburguer-btn"
           aria-label="Open or close hamburguer menu on mobile"
           aria-labelledby="labeldiv"
-          className="flex items-center px-3 py-2 rounded text-product-gray-500 hover:text-product-gray-400 mbl:mr-5"
+          className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
         >
           {isOpen ? (
             <X size={24} color="#3A1B3B" />
@@ -53,25 +58,25 @@ export function Header() {
         </button>
       </div>
       <div
-        className={`px-6  w-full flex flex-grow lg:flex lg:items-center lg:w-auto mbl:bg-white mbl:flex-col mbl:gap-5 ${
+        className={`p-6 w-full flex flex-grow lg:flex lg:items-center lg:w-auto mbl:bg-white mbl:flex-col mbl:gap-5 ${
           isOpen ? "block" : "hidden"
         }`}
       >
         <div className="flex gap-3 text-base font-semibold lg:flex-grow mbl:flex-col mbl:gap-0 mbl:mt-6">
           {navigation.map((item) => (
-            <NavLink
+            <a
               key={item.name}
-              to={item.href}
-              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:text-product-purple-300 focus:text-product-purple-400"
+              href={item.href}
+              className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:text-product-purple-300 focus:text-pink-400 mbl:text-lg"
             >
               {item.name}
-            </NavLink>
+            </a>
           ))}
         </div>
         <div>
-          <NavLink to="/login">
+          <a href="/login">
             <UserCircle size={42} color="#3a1b3b" />
-          </NavLink>
+          </a>
         </div>
       </div>
     </nav>

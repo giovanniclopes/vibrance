@@ -13,7 +13,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="grid grid-cols-2 gap-x-5 pt-28 bg-homeFirstSectionImage bg-center mbl:flex mbl:flex-col mbl:gap-24 mbl:pt-24">
+    <section className="grid grid-cols-2 gap-x-5 pt-28 bg-homeFirstSectionImage bg-center mbl:flex mbl:flex-col mbl:gap-24 mbl:pt-24 mbl:bg-auto mbl:bg-top">
       <div className="flex flex-col gap-10 items-start justify-center px-12 mbl:pr-5">
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-5xl text-product-purple-500 mbl:text-4xl">
