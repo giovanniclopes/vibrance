@@ -8,7 +8,11 @@ export default function BookClub() {
         <div className="flex flex-col gap-10 items-start justify-center px-12 mbl:pr-5">
           <div className="flex flex-col gap-4">
             <h1 className="font-bold text-5xl mbl:text-3xl">
-              Com o <span className="font-extrabold text-product-purple-500">BookClub</span> descubra dicas, ideias e muito mais para educadores e famílias.
+              Com o{" "}
+              <span className="font-extrabold text-product-purple-500">
+                BookClub
+              </span>{" "}
+              descubra dicas, ideias e muito mais para educadores e famílias.
             </h1>
             <p className="text-lg pr-1">
               Livros com autoria <span className="font-medium">Vibrance</span>.

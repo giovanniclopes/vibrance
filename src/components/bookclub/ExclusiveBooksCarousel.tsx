@@ -46,7 +46,6 @@ const ExclusiveBooksCarousel = () => {
     ],
   };
 
-  
   const ExclusiveBooks = [
     BibliaNVT,
     IssoEArte,

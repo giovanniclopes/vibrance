@@ -14,7 +14,6 @@ export default function Contact() {
             <ContactForm />
           </div>
 
-
           <div className="grid grid-cols-2 gap-20 mbl:px-1">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-2">
