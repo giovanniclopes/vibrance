@@ -100,7 +100,7 @@ function PlanSelector() {
         />
       </div>
 
-      <div className="grid grid-cols-3 mt-4 gap-4">
+      <div className="grid grid-cols-3 mt-4 gap-4 mbl:grid-cols-1 mbl:mx-6">
         {selectedPlans.map((plan, index) => (
           <div
             key={plan.name}

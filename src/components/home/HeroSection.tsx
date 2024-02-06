@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MagnifyingGlass } from "phosphor-react";
+import { useNavigate } from "react-router-dom";
 
 import homeDuplicatedBooks from "../../assets/home-duplicated-books.webp";
 import HomeDecoration from "../../assets/svg/HomeDecoration";
@@ -7,9 +8,12 @@ import HomeDecorationMobile from "../../assets/home-decoration-mobile.png";
 
 export default function HeroSection() {
   const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate(); // Utilize useNavigate para navegação
 
   const handleSearchButtonClick = () => {
-    setSearchValue("");
+    // Redirecionar para a página "/products" com o texto da pesquisa na URL
+    navigate(`/products?search=${searchValue}`);
+    setSearchValue(""); // Limpar o valor de pesquisa após o redirecionamento
   };
 
   return (
@@ -34,13 +38,13 @@ export default function HeroSection() {
             onChange={(e) => setSearchValue(e.target.value)}
             placeholder="Pesquise por um livro..."
           />
-          <div
+          <button
             id="search-btn"
             className="flex items-center justify-center px-8 bg-product-purple-500 rounded-se-md rounded-ee-md cursor-pointer transition-all active:bg-product-purple-400"
             onClick={handleSearchButtonClick}
           >
             <MagnifyingGlass size={28} color="#ffffff" />
-          </div>
+          </button>
         </div>
       </div>
       <div className="mbl:hidden">
