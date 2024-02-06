@@ -1,6 +1,6 @@
 import PlanSelector from "./PlanSelector";
 import WavesUp from "../../assets/svg/wavesUp.svg";
-import WavesDown from "../../assets/svg/wavesDOwn.svg";
+import WavesDown from "../../assets/svg/wavesDown.svg";
 
 export default function Plans() {
   return (
