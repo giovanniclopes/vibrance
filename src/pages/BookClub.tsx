@@ -1,5 +1,6 @@
 import BookClubGirlIllustration from "../assets/svg/BookClubGirlIllustration";
 import ExclusiveBooks from "../components/bookclub/ExclusiveBooks";
+import Plans from "../components/bookclub/Plans";
 
 export default function BookClub() {
   return (
@@ -32,6 +33,7 @@ export default function BookClub() {
       </section>
 
       <ExclusiveBooks />
+      <Plans />
     </main>
   );
 }
