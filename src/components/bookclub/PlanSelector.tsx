@@ -1,6 +1,6 @@
 // src/components/PlanSelector.tsx
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Check, X } from "phosphor-react";
 
 interface Plan {
@@ -17,6 +17,24 @@ interface Plan {
 
 function PlanSelector() {
   const [isAnnual, setIsAnnual] = useState(false);
+
+    const [linkUnavailable, setLinkUnavailable] = useState(false);
+
+    const handleSaberMaisClick = () => {
+      setLinkUnavailable(true);
+
+      // Agendar a remoção da mensagem após 5 segundos
+      setTimeout(() => {
+        setLinkUnavailable(false);
+      }, 5000);
+    };
+
+    // Limpar a mensagem se o componente for desmontado antes do tempo
+    useEffect(() => {
+      return () => {
+        setLinkUnavailable(false);
+      };
+    }, []);
 
   const plans: Plan[] = [
     {
@@ -120,16 +138,22 @@ function PlanSelector() {
                     ? "bg-white text-product-purple-500"
                     : "text-product-purple-500"
                 } border border-product-purple-500 rounded`}
+                onClick={handleSaberMaisClick}
               >
                 Comece agora!
               </button>
+              {linkUnavailable && (
+                <p className="text-red-500 mt-2">O link não está disponível.</p>
+              )}
             </div>
             <ul className="mt-4">
               {plan.services.map((service, serviceIndex) => (
                 <li
                   key={serviceIndex}
                   className={`flex items-center ${
-                    !service.available ? "text-gray-500 font-thin" : "font-medium"
+                    !service.available
+                      ? "text-gray-500 font-thin"
+                      : "font-medium"
                   }`}
                 >
                   {service.available ? (
