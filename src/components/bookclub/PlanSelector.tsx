@@ -104,7 +104,7 @@ function PlanSelector() {
         {selectedPlans.map((plan, index) => (
           <div
             key={plan.name}
-            className={`flex flex-col justify-start items-start gap-5 p-8 border border-product-purple-500 rounded-lg ${
+            className={`flex flex-col justify-start items-start gap-5 p-8 border border-gray-300 rounded-lg ${
               index === 1 ? "bg-product-purple-500 text-white" : ""
             }`}
           >
@@ -115,7 +115,7 @@ function PlanSelector() {
             }`}</span>
             <div className="w-full mt-4">
               <button
-                className={`w-full p-3 font-semibold ${
+                className={`w-full p-3 font-semibold hover:opacity-80 ${
                   index === 1
                     ? "bg-white text-product-purple-500"
                     : "text-product-purple-500"
@@ -129,11 +129,11 @@ function PlanSelector() {
                 <li
                   key={serviceIndex}
                   className={`flex items-center ${
-                    !service.available ? "text-gray-500" : ""
+                    !service.available ? "text-gray-500 font-thin" : "font-medium"
                   }`}
                 >
                   {service.available ? (
-                    <Check className="mr-2 text-green-500" />
+                    <Check weight="bold" className="mr-2 text-green-500" />
                   ) : (
                     <X className="mr-2" />
                   )}
